@@ -1,0 +1,11 @@
+install.packages('FD')
+library(FD)
+library(usethis)
+create_github_token()
+install.packages('gitcreds')
+library(gitcreds)
+gitcreds_set()
+library(readxl)
+#carregando planilha bruta dos dados
+Planilha_Geral_2_ <- read_excel("C:/Users/1/Downloads/Planilha Geral   (2).xlsx")
+View(Planilha_Geral_2_)
